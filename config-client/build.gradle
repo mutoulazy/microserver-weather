@@ -1,0 +1,19 @@
+apply plugin: 'org.springframework.boot'
+
+ext {
+    springCloudVersion = 'Finchley.M2'
+}
+
+dependencies {
+    // Eureka Client
+    compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
+
+    // Config Client
+    compile('org.springframework.cloud:spring-cloud-config-client')
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+    }
+}

@@ -1,0 +1,16 @@
+apply plugin: 'org.springframework.boot'
+
+ext {
+    springCloudVersion = 'Finchley.M2'
+}
+
+dependencies {
+    // Eureka Server
+    compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-server')
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+    }
+}
