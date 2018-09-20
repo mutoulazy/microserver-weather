@@ -3,4 +3,8 @@ include 'eureka-server'
 include 'config-server'
 include 'config-client'
 include 'eureka-client'
+include 'weather-city-eureka-client'
+include 'eureka-client-feign'
+include 'eureka-client-feign-hystrix'
+include 'eureka-client-zuul'
 

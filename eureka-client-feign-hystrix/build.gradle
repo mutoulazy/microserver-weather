@@ -8,8 +8,9 @@ dependencies {
     // Eureka Client
     compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
 
-    // Config Client
-    compile('org.springframework.cloud:spring-cloud-config-client')
+    compile('org.springframework.cloud:spring-cloud-starter-netflix-hystrix')
+
+    compile('org.springframework.cloud:spring-cloud-starter-openfeign')
 }
 
 dependencyManagement {

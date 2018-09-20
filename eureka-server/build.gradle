@@ -1,7 +1,7 @@
 apply plugin: 'org.springframework.boot'
 
 ext {
-    springCloudVersion = 'Finchley.M2'
+    springCloudVersion = 'Finchley.M9'
 }
 
 dependencies {
